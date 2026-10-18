@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de privacidad — Consulta Boletines Oficiales - Legislación consolidada (aplicación de escritorio)</title>
+<style>
+:root { --fondo: #fbfaf7; --texto: #1d1d1b; --suave: #5b5b57; --linea: #dedbd2; --acento: #1f3a5f; --enlace: #1f4f8f; }
+@media (prefers-color-scheme: dark) {
+  :root { --fondo: #17191c; --texto: #e9e7e1; --suave: #a7a49c; --linea: #33363b; --acento: #9db8dc; --enlace: #9cc3f5; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fondo); color: var(--texto); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 46rem; margin: 0 auto; padding: 2rem 1rem 3rem; }
+h1 { font-size: 1.6rem; line-height: 1.25; color: var(--acento); margin: 0 0 1rem; }
+h2 { font-size: 1.2rem; margin: 2rem 0 .5rem; padding-top: 1rem; border-top: 1px solid var(--linea); }
+a { color: var(--enlace); }
+code { font-family: ui-monospace, Consolas, monospace; font-size: .92em; overflow-wrap: anywhere; }
+li { margin: .35rem 0; }
+nav { font-size: .95rem; margin-bottom: 1.5rem; color: var(--suave); }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--linea); font-size: .9rem; color: var(--suave); }
+</style>
+</head>
+<body>
+<main>
+<nav><a href="./">Consulta Boletines Oficiales - Legislación consolidada</a> · <a href="privacidad.html">Política de privacidad</a> · <a href="condiciones.html">Condiciones de uso</a></nav>
+<h1>Política de privacidad — Consulta Boletines Oficiales - Legislación consolidada (aplicación de escritorio)</h1>
+
+<p><em>Antes «BOE · Legislación consolidada».</em></p>
+
+<p><strong>Última actualización:</strong> 18 de octubre de 2026<br>
+<strong>Responsable:</strong> José Luis López Fontán (desarrollador particular). Aplicación gratuita, sin ánimo de lucro.<br>
+<strong>Contacto:</strong> <a href="mailto:jllfontan@gmail.com">jllfontan@gmail.com</a></p>
+
+<h2>Resumen</h2>
+
+<p>La aplicación <strong>no recoge, no envía y no vende datos personales</strong>. No tiene cuentas de usuario, ni publicidad, ni analítica, ni telemetría. El desarrollador no recibe ningún dato de quien la usa.</p>
+
+<h2>Qué hace la aplicación</h2>
+
+<p>Consulta fuentes públicas de legislación española y muestra los resultados en el ordenador del usuario:</p>
+
+<ul>
+  <li><strong>Agencia Estatal Boletín Oficial del Estado</strong> (<code>www.boe.es</code>): legislación consolidada y sentencias del Tribunal Constitucional publicadas en el BOE.</li>
+  <li><strong>Open Data Euskadi</strong> (<code>api.euskadi.eus</code>): normativa del Boletín Oficial del País Vasco.</li>
+  <li><strong>CENDOJ</strong> (<code>www.poderjudicial.es</code>): solo cuando el usuario autoriza expresamente una búsqueda concreta (ver más abajo).</li>
+</ul>
+
+<p>Las búsquedas y los textos que el usuario escribe o pega (por ejemplo, un escrito para verificar sus citas) se procesan <strong>en su propio ordenador</strong>. Para resolver cada cita, la aplicación envía a esas fuentes oficiales únicamente los términos de búsqueda necesarios (por ejemplo, el nombre o número de una norma), nunca el escrito completo. Esas peticiones se rigen por las condiciones de cada organismo.</p>
+
+<h2>Búsqueda en el CENDOJ (solo si el usuario la autoriza, una a una)</h2>
+
+<p>Desde la versión 0.2.1, la pantalla &quot;Verificar escrito&quot; permite buscar una sentencia del Tribunal Supremo, la Audiencia Nacional, un Tribunal Superior de Justicia o una Audiencia Provincial en el buscador público del Centro de Documentación Judicial (CENDOJ, <code>www.poderjudicial.es</code>, del Consejo General del Poder Judicial).</p>
+
+<ul>
+  <li><strong>Solo ocurre si el usuario lo autoriza expresamente en cada búsqueda.</strong> Antes, la aplicación muestra una ventana con los valores exactos que se enviarán; sin pulsar &quot;Autorizar esta búsqueda&quot; no se abre ni se envía nada. Cada autorización sirve para una sola búsqueda.</li>
+  <li><strong>Qué se envía y a quién:</strong> al CENDOJ (<code>www.poderjudicial.es</code>), únicamente el <strong>número de resolución</strong> y el <strong>tipo de órgano</strong> (por ejemplo, &quot;Tribunal Supremo&quot;), y solo cuando el usuario pulsa «Buscar». Nunca el texto del escrito, ni fechas, ni datos del usuario.</li>
+  <li><strong>Cómo:</strong> la aplicación abre la página del buscador del CENDOJ en un panel visible, con una sesión de navegación aislada que no se guarda en disco y se borra al cerrar el panel, rellena esos dos campos y <strong>no pulsa «Buscar»</strong>: la búsqueda la lanza el propio usuario con ese botón. El usuario ve la página igual que en su navegador. Como cualquier página web, el CENDOJ recibe la dirección IP y los datos técnicos habituales del navegador; esa consulta se rige por las condiciones y la política de privacidad del CGPJ.</li>
+  <li><strong>Qué hace la aplicación con el resultado:</strong> nada. No lee, no guarda, no resume ni reenvía los resultados; no pasa de página ni descarga documentos. Los enlaces que el usuario abra fuera del CENDOJ, o los documentos que quiera descargar, se abren en su propio navegador.</li>
+  <li><strong>Alternativa manual:</strong> el usuario puede, en vez de autorizar, copiar los valores y hacer la búsqueda él mismo en su navegador.</li>
+</ul>
+
+<h2>Qué se guarda en el ordenador</h2>
+
+<ul>
+  <li>Una <strong>caché</strong> de las respuestas del BOE y de Open Data Euskadi, en la carpeta de datos de la aplicación del usuario, para no repetir consultas. Puede borrarse desinstalando la aplicación o borrando esa carpeta.</li>
+  <li>Un <strong>registro local de las búsquedas autorizadas en el CENDOJ</strong> (archivo <code>cendoj-autorizaciones.jsonl</code> en la misma carpeta): para cada búsqueda que el usuario autorizó, solo la fecha y hora, el número de resolución y el tipo de órgano. Sirve para que el usuario pueda demostrar que cada consulta se hizo a petición suya. No contiene nada de los resultados y no sale nunca del ordenador. <strong>El usuario puede consultarlo, exportarlo y borrarlo en cualquier momento</strong> desde la propia aplicación (pantalla «Verificar escrito», «Registro de las búsquedas que has autorizado»; el borrado pide confirmación y elimina el archivo).</li>
+  <li>Las anotaciones que el usuario escriba a mano (&quot;Verificada por mí en el CENDOJ&quot;, ROJ, ECLI) se guardan solo en memoria mientras la aplicación está abierta.</li>
+  <li>Nada más. La aplicación no lee otros archivos del ordenador, y fuera de su carpeta de datos solo escribe la copia del registro que el usuario exporte, en el lugar que él elija.</li>
+</ul>
+
+<h2>Funciones opcionales futuras</h2>
+
+<p>Si en versiones futuras la aplicación permite usar un asistente de inteligencia artificial elegido por el usuario (con su propia clave), esta política se actualizará antes de publicar esa versión, indicando qué se envía, a quién y cuándo. Esa función será siempre opcional y desactivada por defecto.</p>
+
+<h2>Menores</h2>
+
+<p>La aplicación es una herramienta de consulta jurídica y no está dirigida a menores. No recoge datos de nadie.</p>
+
+<h2>Cambios</h2>
+
+<p>Cualquier cambio de esta política se publicará en esta misma dirección, con su fecha.</p>
+<footer>Aplicación gratuita para Windows, de un desarrollador particular. No es una aplicación oficial del BOE ni de ningún organismo público. Contacto: <a href="mailto:jllfontan@gmail.com">jllfontan@gmail.com</a>.</footer>
+</main>
+</body>
+</html>

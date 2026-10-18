@@ -1,0 +1,14 @@
+Condiciones de uso — Consulta Boletines Oficiales - Legislación consolidada
+
+Última actualización: 18 de octubre de 2026
+Contacto: jllfontan@gmail.com
+
+Estas condiciones se suman a la licencia MIT del programa (que permite usar, copiar y modificar el código) y regulan cómo se usa la aplicación frente a las fuentes que consulta: el BOE, Open Data Euskadi (BOPV) y el buscador público del CENDOJ. Se muestran también en la Ayuda de la aplicación.
+
+1. Uso personal y manual. La aplicación es gratuita y sin actividad económica. Está pensada para consultas puntuales hechas por una persona, una a una.
+2. Prohibidas las consultas masivas. No se puede usar la aplicación, ni versiones modificadas de ella, para descargar, recopilar o indexar de forma masiva o sistemática contenidos del BOE, de Open Data Euskadi o del CENDOJ, ni para recorrer listados completos, ni para alimentar bases de datos, buscadores o servicios de terceros.
+3. No eludir los límites. Los límites de la aplicación (una autorización por cada búsqueda en el CENDOJ, pausa entre búsquedas, el usuario pulsa «Buscar» y lee él mismo el resultado, parada ante un CAPTCHA) existen para respetar las condiciones de las fuentes. No se pueden desactivar, automatizar ni sortear.
+4. Respetar las condiciones de cada fuente. Quien use la aplicación debe cumplir las condiciones de reutilización de cada organismo (BOE; Open Data Euskadi, licencia CC BY 4.0, con cita de la fuente; CGPJ para el CENDOJ, incluido su aviso legal). La aplicación no sustituye esas condiciones ni da ninguna autorización del CGPJ.
+5. Sin valor oficial. Los textos mostrados son consulta, no publicación oficial. Solo tiene valor el texto publicado en el diario oficial. La aplicación no describe ni resume sentencias del Supremo ni de las Audiencias: una cita de jurisprudencia solo está verificada si la ha comprobado el usuario en el CENDOJ.
+6. Responsabilidad. El usuario es responsable del uso que haga de la aplicación y de lo que consulte con ella. La aplicación se ofrece «tal cual», sin garantías (ver licencia MIT).
+7. Uso indebido. Quien use la aplicación contra estas condiciones lo hace fuera de lo que su autor autoriza, y bajo su propia responsabilidad.
