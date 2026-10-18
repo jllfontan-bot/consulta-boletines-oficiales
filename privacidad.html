@@ -34,19 +34,31 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--linea)
 
 <h2>Resumen</h2>
 
-<p>La aplicación <strong>no recoge, no envía y no vende datos personales</strong>. No tiene cuentas de usuario, ni publicidad, ni analítica, ni telemetría. El desarrollador no recibe ningún dato de quien la usa.</p>
+<p>La aplicación <strong>no recoge, no envía y no vende datos personales</strong>. No tiene cuentas de usuario, ni publicidad, ni analítica, ni telemetría. El desarrollador no recibe ningún dato de quien la usa. Los únicos datos personales que puede mostrar son los que publica el Boletín Oficial del Registro Mercantil (ver más abajo), y no los guarda en disco.</p>
 
 <h2>Qué hace la aplicación</h2>
 
 <p>Consulta fuentes públicas de legislación española y muestra los resultados en el ordenador del usuario:</p>
 
 <ul>
-  <li><strong>Agencia Estatal Boletín Oficial del Estado</strong> (<code>www.boe.es</code>): legislación consolidada y sentencias del Tribunal Constitucional publicadas en el BOE.</li>
+  <li><strong>Agencia Estatal Boletín Oficial del Estado</strong> (<code>www.boe.es</code>): legislación consolidada, sentencias del Tribunal Constitucional publicadas en el BOE y, desde la versión 0.3.0, actos y anuncios de empresas del Boletín Oficial del Registro Mercantil (BORME).</li>
   <li><strong>Open Data Euskadi</strong> (<code>api.euskadi.eus</code>): normativa del Boletín Oficial del País Vasco.</li>
   <li><strong>CENDOJ</strong> (<code>www.poderjudicial.es</code>): solo cuando el usuario autoriza expresamente una búsqueda concreta (ver más abajo).</li>
 </ul>
 
 <p>Las búsquedas y los textos que el usuario escribe o pega (por ejemplo, un escrito para verificar sus citas) se procesan <strong>en su propio ordenador</strong>. Para resolver cada cita, la aplicación envía a esas fuentes oficiales únicamente los términos de búsqueda necesarios (por ejemplo, el nombre o número de una norma), nunca el escrito completo. Esas peticiones se rigen por las condiciones de cada organismo.</p>
+
+<h2>Datos personales que publica el BORME (desde la versión 0.3.0)</h2>
+
+<p>El BORME publica, por mandato legal y para la publicidad mercantil, los actos inscritos y los anuncios de las empresas, que incluyen nombres de personas (administradores, apoderados, socios únicos, liquidadores…). La aplicación los muestra porque forman parte del acto publicado, con estas limitaciones:</p>
+
+<ul>
+  <li><strong>Solo se busca por la denominación de la empresa</strong>, nunca por el nombre de una persona: la búsqueda se compara con la cabecera de cada acto o con el título del anuncio, no con su texto.</li>
+  <li>La denominación buscada <strong>no se envía a ningún sitio</strong>: la aplicación descarga del BOE el sumario de cada día, su índice alfabético de sociedades y los documentos de la provincia donde aparece la empresa, o de la provincia elegida (máximo 31 días por búsqueda), y hace la comparación en el propio ordenador.</li>
+  <li>Solo se muestran los actos de la empresa buscada, nunca el documento completo de una provincia.</li>
+  <li><strong>Los actos y anuncios no se guardan en disco</strong>: solo en memoria, mientras la aplicación está abierta. En la caché solo se guardan el sumario diario del BORME y su índice alfabético de sociedades, que no contienen nombres de personas.</li>
+  <li>Quien use la aplicación debe tratar esos datos solo para la finalidad para la que se publican, con pleno respeto al Reglamento (UE) 2016/679 (RGPD) y a la Ley Orgánica 3/2018 (LOPDGDD), como exigen las condiciones de reutilización del BOE.</li>
+</ul>
 
 <h2>Búsqueda en el CENDOJ (solo si el usuario la autoriza, una a una)</h2>
 
@@ -63,7 +75,7 @@ footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--linea)
 <h2>Qué se guarda en el ordenador</h2>
 
 <ul>
-  <li>Una <strong>caché</strong> de las respuestas del BOE y de Open Data Euskadi, en la carpeta de datos de la aplicación del usuario, para no repetir consultas. Puede borrarse desinstalando la aplicación o borrando esa carpeta.</li>
+  <li>Una <strong>caché</strong> de las respuestas del BOE y de Open Data Euskadi, en la carpeta de datos de la aplicación del usuario, para no repetir consultas. Del BORME solo se guardan los sumarios y los índices alfabéticos de sociedades de cada día (sin nombres de personas); los actos y anuncios, nunca. Puede borrarse desinstalando la aplicación o borrando esa carpeta.</li>
   <li>Un <strong>registro local de las búsquedas autorizadas en el CENDOJ</strong> (archivo <code>cendoj-autorizaciones.jsonl</code> en la misma carpeta): para cada búsqueda que el usuario autorizó, solo la fecha y hora, el número de resolución y el tipo de órgano. Sirve para que el usuario pueda demostrar que cada consulta se hizo a petición suya. No contiene nada de los resultados y no sale nunca del ordenador. <strong>El usuario puede consultarlo, exportarlo y borrarlo en cualquier momento</strong> desde la propia aplicación (pantalla «Verificar escrito», «Registro de las búsquedas que has autorizado»; el borrado pide confirmación y elimina el archivo).</li>
   <li>Las anotaciones que el usuario escriba a mano (&quot;Verificada por mí en el CENDOJ&quot;, ROJ, ECLI) se guardan solo en memoria mientras la aplicación está abierta.</li>
   <li>Nada más. La aplicación no lee otros archivos del ordenador, y fuera de su carpeta de datos solo escribe la copia del registro que el usuario exporte, en el lugar que él elija.</li>
